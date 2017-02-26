@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:id="@+id/layout_aboutapp_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/backgroud_title" >
+
+        <ImageView
+            android:id="@+id/imageview_aboutapp_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于软件"
+            android:textColor="#fff"
+            android:textSize="@dimen/size_title_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_aboutapp_head"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/layout_aboutapp_top"
+        android:background="@color/backgroud_title" >
+
+        <ImageView
+            android:id="@+id/imageview_aboutapp_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:src="@mipmap/app_logo" />
+
+        <TextView
+            android:id="@+id/textview_aboutapp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_aboutapp_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="教育应用宝"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textview_aboutapp_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="版本："
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <expandablelayout.ExpandableLinearLayout
+        android:id="@+id/layout_aboutapp_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_aboutapp_head"
+        android:orientation="vertical"
+        app:el_duration="360"
+        app:el_expanded="true" >
+
+        <RelativeLayout
+            android:id="@+id/layout_aboutapp_spreed"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/actionsheet_bottom_normal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:text="技术支持，特别鸣谢" />
+
+            <ImageView
+                android:id="@+id/imageview_aboutapp_spreed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/arrow_up_aboutapp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#eee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_expandable="true"
+            android:background="@drawable/actionsheet_bottom_normal"
+            android:orientation="vertical" >
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheelview_aboutapp_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </expandablelayout.ExpandableLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/actionsheet_bottom_normal"
+        android:gravity="center"
+        android:text="©We are APP Carrier , Product by Zhu Geliang."
+        android:textSize="10dp" />
+
+</RelativeLayout>

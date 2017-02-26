@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/backgroud_title" >
+
+        <ImageView
+            android:id="@+id/imageview_appdetails_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="软件详情"
+            android:textColor="#fff"
+            android:textSize="@dimen/size_title_name" />
+    </RelativeLayout>
+
+    <view.StickyNavLayout
+        android:id="@+id/id_stick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_top"
+        android:orientation="vertical"
+        app:isStickNav="false"
+        app:stickOffset="0dp" >
+
+        <LinearLayout
+            android:id="@+id/id_stickynavlayout_topview"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:background="@color/backgroud_title"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageview_appdetails_icon"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview_appdetails_appname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="教育应用宝"
+                        android:textColor="@android:color/white"
+                        android:textSize="16dp" />
+
+                    <view.RatingBar
+                        android:id="@+id/ratingbar_appdetails_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        app:clickable="false"
+                        app:halfstart="true"
+                        app:starCount="5"
+                        app:starEmpty="@mipmap/star_empty"
+                        app:starFill="@mipmap/star_full"
+                        app:starHalf="@mipmap/star_half"
+                        app:starImageHeight="16dp"
+                        app:starImagePadding="2dp"
+                        app:starImageWidth="16dp" >
+                    </view.RatingBar>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textview_appdetails_applength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15.4mb"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/textview_appdetails_appcount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="500次下载"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <view.PagerSlidingTabStrip
+            android:id="@+id/id_stickynavlayout_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/backgroud_title"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:pstsDividerColor="@android:color/white"
+            app:pstsIndicatorColor="@android:color/white"
+            app:pstsIndicatorHeight="3dp"
+            app:pstsScaleZoomMax="0.2"
+            app:pstsShouldExpand="true"
+            app:pstsTextSelectedColor="@android:color/white" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_stickynavlayout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+    </view.StickyNavLayout>
+
+</RelativeLayout>

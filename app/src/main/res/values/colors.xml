@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="material_blue_700">#00796B</color>
+    <color name="spots_dialog_color">#6633B5E5</color>
+    <color name="google_blue">#4285F4</color>
+    <color name="google_red">#EA4335</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+    <!-- 红色 -->
+    <color name="style_color_primary">#d32f2f</color>
+    <!-- 紫红 -->
+    <color name="style_color_primary_dark">#b71c1c</color>
+    <!-- 淡红 -->
+    <color name="style_color_primary_light">#FFCDD2</color>
+    <!-- 黑色 -->
+    <color name="style_window_background">#212121</color>
+    <!-- 白色 -->
+    <color name="style_window_background_light">#ffffff</color>
+    <!-- 标题栏 -->
+    <color name="backgroud_title">#669738</color>
+    <!-- 背景色 -->
+    <color name="backgroud">#F0FFF0</color>
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="colorOverlay">#50ffffff</color>
+</resources>

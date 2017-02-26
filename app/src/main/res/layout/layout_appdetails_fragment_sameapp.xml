@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/actionsheet_bottom_normal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_appdetails_fragment_function_spreed"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="18dp"
+                android:background="@color/backgroud_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="同类软件"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <view.NoScrollGridView
+            android:id="@+id/gridview_fragment_appdetails_sameapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:verticalSpacing="8dp"
+            android:stretchMode="columnWidth" >
+        </view.NoScrollGridView>
+    </LinearLayout>
+
+</LinearLayout>

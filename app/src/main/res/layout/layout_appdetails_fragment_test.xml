@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <expandablelayout.ExpandableLinearLayout
+        android:id="@+id/layout_appdetails_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/actionsheet_bottom_normal"
+        android:orientation="vertical"
+        app:el_duration="360"
+        app:el_expanded="true" >
+
+        <LinearLayout
+            android:id="@+id/layout_appdetails_fragment_spread"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/textview_appdetails_fragment_free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/test_ok"
+                android:drawablePadding="6dp"
+                android:text="免费" />
+
+            <TextView
+                android:id="@+id/textview_appdetails_fragment_safe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@mipmap/test_ok"
+                android:drawablePadding="6dp"
+                android:text="安全" />
+
+            <TextView
+                android:id="@+id/textview_appdetails_fragment_adver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@mipmap/test_ok"
+                android:drawablePadding="6dp"
+                android:text="有广告" />
+
+            <TextView
+                android:id="@+id/textview_appdetails_fragment_spread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:drawableRight="@mipmap/arrow_down_details"
+                android:gravity="right"
+                android:text="展开"
+                android:textColor="@color/backgroud_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_appdetails_fragment_expand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_expandable="true"
+            android:orientation="vertical"
+            android:paddingLeft="12dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_appdetails_fragment_installnormal_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/test_ok"
+                    android:drawablePadding="6dp"
+                    android:text="线下安装：" />
+
+                <TextView
+                    android:id="@+id/textview_appdetails_fragment_installnormal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_appdetails_fragment_running_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/test_ok"
+                    android:drawablePadding="6dp"
+                    android:text="是否需要联网：" />
+
+                <TextView
+                    android:id="@+id/textview_appdetails_fragment_running_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_appdetails_fragment_onlyuse_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/test_ok"
+                    android:drawablePadding="6dp"
+                    android:text="是否离线运行：" />
+
+                <TextView
+                    android:id="@+id/textview_appdetails_fragment_onlyuse_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_appdetails_fragment_register_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/test_ok"
+                    android:drawablePadding="6dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="是否需要注册：" />
+
+                <TextView
+                    android:id="@+id/textview_appdetails_fragment_register_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </expandablelayout.ExpandableLinearLayout>
+
+</LinearLayout>

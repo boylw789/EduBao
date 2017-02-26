@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroud_title" >
+
+        <ImageView
+            android:id="@+id/imageview_mydownload_back"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@null"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="下载管理"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_title_name" />
+    </RelativeLayout>
+
+    <com.shizhefei.view.indicator.ScrollIndicatorView
+        android:id="@+id/indicator_mydownload"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/alert_bg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_mydownload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

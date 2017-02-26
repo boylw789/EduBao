@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgroud_title"
+        android:gravity="center"
+        android:text="分类"
+        android:textColor="#fff"
+        android:textSize="@dimen/size_title_name" />
+
+    <ExpandableListView
+        android:id="@+id/expandablelistview_classfiy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="6dp"
+        android:divider="@null"
+        android:dividerHeight="8dp"
+        android:groupIndicator="@null" >
+    </ExpandableListView>
+
+</LinearLayout>
