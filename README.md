@@ -5,8 +5,8 @@ Android小白：简单的教育应用商店，包括【精品】【排行】【�
 2.数据解析 fastjson<br>
 3.下拉刷新 swipetoloadlayot<br>
 4.图片处理 glide<br>
-5.tab切换 viewpagerindicator <br>  
-6.nineoldandroids <br>
+5.tab切换 viewpagerindicator <br>
+6.兼容适配 nineoldandroids <br>
 7.其它 systembartint，switchbutton，wheeview，NumberProgressBar，StickyNavLayout，ActionSheetDialog，SpotsDialog，RatingBar等<br>
 #### 二：关于我<br>
 boylw789@163.com<br>
